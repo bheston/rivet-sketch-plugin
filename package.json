@@ -1,7 +1,7 @@
 {
   "name": "rivet",
   "description": "",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "engines": {
     "sketch": ">=49.0"
   },
@@ -26,7 +26,7 @@
   "dependencies": {
     "sketch-module-web-view": "^3.0.7"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/bheston/rivet-sketch-plugin.git"
   },
