@@ -1,0 +1,44 @@
+{
+  "author": "Brian Heston",
+  "icon": "icon.png",
+  "identifier": "com.rivet",
+  "version": "1.0.0",
+  "description": "A collection of utilities for list and table generation",
+  "name": "Rivet",
+  "commands": [
+    {
+      "script": "rivet-icons.js",
+      "shortcut": "control shift i",
+      "name": "Rivet Icons",
+      "identifier": "rivet-icons",
+      "description": "Add an icon container and search for icon symbols",
+      "icon": "rivets.jpg"
+    },
+    {
+      "script": "rivet-list.js",
+      "shortcut": "control shift l",
+      "name": "Rivet List",
+      "identifier": "rivet-list",
+      "description": "An easier interface for generating a Rivet list",
+      "icon": "icon-sr.png"
+    },
+    {
+      "script": "rivet-table.js",
+      "shortcut": "control shift t",
+      "name": "Rivet Table",
+      "identifier": "rivet-table",
+      "description": "An easier interface for generating a Rivet table",
+      "icon": "icon-sr.png"
+    }
+  ],
+  "menu": {
+    "title": "Rivet",
+    "items": [
+      "rivet-icons",
+      "rivet-list",
+      "rivet-table"
+    ]
+  },
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}

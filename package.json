@@ -1,0 +1,34 @@
+{
+  "name": "rivet",
+  "description": "",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "Rivet",
+    "manifest": "src/manifest.json",
+    "main": "rivet.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0"
+  },
+  "dependencies": {
+    "sketch-module-web-view": "^3.0.7"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "git+https://github.com/bheston/rivet-sketch-plugin.git"
+  },
+  "author": "Brian Heston"
+}

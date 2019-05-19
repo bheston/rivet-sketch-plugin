@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rivet Icon Generator</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="assets/js/lib/select2.min.css" rel="stylesheet">
+  <link href="assets/js/lib/select2-material.css" rel="stylesheet">
+  <link href="assets/css/index.css" rel="stylesheet">
+  <style>
+  .block__content {
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+  }
+  .block__footer {
+    left: 0;
+  }
+  .icon-preview span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: white;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-panel">
+      <span>Rivet Icon Generator</span>
+    </div>
+
+    <div class="row-panel">
+      <div style="padding: 0 10px;">
+        <div class="block">
+          <div class="block__content icon-preview">
+            <div class="form-field">
+              <div class="form-field-label">Preview</div>
+              <div>
+                <span id="icon1Preview"></span>
+                <span id="icon2Preview"></span>
+                <span id="icon3Preview"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <select multiple="multiple" id='debugLogging' style="display: none;"></select>
+    </div>
+
+    <div class="row-panel">
+      <div style="padding: 0 10px;">
+        <div class="block">
+          <div class="block__content">
+            <div class="form-field">
+              <div class="form-field-label">Icon 1</div>
+              <select id="icon1">
+              </select>
+            </div>
+            <div class="form-field">
+              <div class="form-field-label">Tint</div>
+              <select id="icon1Tint">
+              </select>
+            </div>
+          </div>
+
+          <div class="block__content">
+            <div class="form-field">
+              <div class="form-field-label">Icon 2</div>
+              <select id="icon2">
+                <option value="">None</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <div class="form-field-label">Tint</div>
+              <select id="icon2Tint">
+              </select>
+            </div>
+          </div>
+
+          <div class="block__content">
+            <div class="form-field">
+              <div class="form-field-label">Icon 3</div>
+              <select id="icon3">
+                <option value="">None</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <div class="form-field-label">Tint</div>
+              <select id="icon3Tint">
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="block__footer">
+      <div class="actions is-pulled-right">
+        <button id="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Generate</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/lib/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/material.min.js"></script>
+  <script type="text/javascript" src="assets/js/common.js"></script>
+  <script type="text/javascript" src="assets/js/components/icons.js"></script>
+  <script type="text/javascript" src="assets/js/lib/select2.min.js"></script>
+</body>
+</html>

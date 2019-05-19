@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rivet Table Generator</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-panel">
+      <span>Rivet Table Generator</span>
+    </div>
+    <div class="row-panel">
+      <div class="settings-panel">
+        <div class="block">
+          <div class="block__content">
+
+            <div class="form-field">
+              <label class="mdl-checkbox mdl-js-checkbox" for="hasDefaultValues">
+                <input type="checkbox" checked id="hasDefaultValues" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Use sample data</span>
+              </label>
+            </div>
+
+            <!--div class="form-field">
+              <label class="mdl-checkbox mdl-js-checkbox" for="hasShadow">
+                <input type="checkbox" checked id="hasShadow" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Border</span>
+              </label>
+            </div-->
+
+            <div class="form-field">
+              <label class="mdl-checkbox mdl-js-checkbox" for="hasPagination">
+                <input type="checkbox" checked id="hasPagination" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Pagination</span>
+              </label>
+            </div>
+
+            <div class="form-field">
+              <label class="mdl-checkbox mdl-js-checkbox" for="hasCheckboxes">
+                <input type="checkbox" id="hasCheckboxes" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Checkboxes</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-field-label">Preview</div>
+        <div class="mini-table mdl-card mdl-shadow--2dp">
+          <div class="mini-table-body M">
+            <div class="mini-table-row">
+              <div class="checkbox hide"></div>
+            </div>
+            <div class="mini-table-row">
+              <div class="checkbox hide"></div>
+            </div>
+            <div class="mini-table-row">
+              <div class="checkbox hide"></div>
+            </div>
+            <div class="mini-table-row">
+              <div class="checkbox hide"></div>
+            </div>
+          </div>
+          <div class="min-table-footer">
+            &nbsp;&nbsp;&nbsp;❮&nbsp;&nbsp;&nbsp;&nbsp;❯&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+
+      <div class="output-panel">
+        <div class="table__container">
+          <div class="table">
+            <div id="sheet"></div>
+            <select multiple="multiple" id='debugLogging' style="display: none; width: 500px;"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="block__footer">
+        <div class="actions is-pulled-right">
+          <button id="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Generate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/lib/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/material.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/handsontable.min.js"></script>
+  <script type="text/javascript" src="assets/js/common.js"></script>
+  <script type="text/javascript" src="assets/js/components/table.js"></script>
+</body>
+</html>
