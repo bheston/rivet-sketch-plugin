@@ -31,8 +31,10 @@ var List = function() {
   var pageOrArtboard = doc.currentPage().currentArtboard() || doc.currentPage();
   logger.debug(pageOrArtboard);
 
+  var listSymbols = search.findSymbolsByNameBegin('Rivet/Dropdown/');
+
   var _generateList = function() {
-    var initialData = null;
+    var initialData = {missingSymbols: listSymbols.length === 0};
     var sel = context.current().selection;
     var selCount = sel.count();
     if (selCount == 1) {
@@ -65,8 +67,9 @@ var List = function() {
           //{"Item 5":{"symbol":"Rivet/Dropdown/SingleItem-Group","Label":"Group"},"Item 6":{"Label":"Four"},"Item 3":{"Label":"Two"},"Item 1":{"symbol":"Rivet/Dropdown/Search"},"Item 8":{"Label":"Six"},"Item 4":{"Label":"Three"},"Item 2":{"Label":"One"},"Item 9":{"Label":"Seven"},"Item 7":{"Label":"Five"}}
           //debugObject(temp);
           //initialData = metadata.getConfigs(sel[0]);
-          initialData = {selectionType: selectionType, hasSearch: hasSearch, items: items};
-          logger.debug('loading config', initialData);
+          initialData.selectionType = selectionType;
+          initialData.hasSearch = hasSearch;
+          initialData.items = items;
         }
       }
 

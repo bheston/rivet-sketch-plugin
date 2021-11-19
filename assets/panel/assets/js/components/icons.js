@@ -57,6 +57,9 @@ function formatState(state) {
 
 function init(data) {
   if (data) {
+    if (data.availableIcons.length === 0) {
+      $('#message').show();
+    }
     var selectParams = {theme: 'material', width: '230px', templateResult: formatState};
     for (var i = 0; i < 3; i++) {
       var iconSelect = $('#icon' + (i + 1));

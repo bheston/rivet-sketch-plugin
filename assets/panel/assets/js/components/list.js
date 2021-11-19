@@ -66,5 +66,10 @@ function init(data) {
     //mdlSetCheckbox($('#hasShadow'), data.hasShadow == 'on');
     //mdlSetCheckbox($('#hasPagination'), data.hasPagination == 'on');
     //mdlSetCheckbox($('#hasCheckboxes'), data.hasCheckboxes == 'on');
+
+    if (data.missingSymbols) {
+      $('#message').show();
+      $('#submit').disable();
+    }
   }
 }
